@@ -1,0 +1,25 @@
+/* Designed for Mobile */
+body {
+    background-color: white;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: thick double black;
+}
+
+header div {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+/* ForTablet, Laptop, and PC */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: red;
+        color: white;
+    }
+}
