@@ -1,4 +1,4 @@
-/* Designed for Mobile */
+/* ForTablet, Laptop, and PC */
 body {
     background-color: white;
     color: black;
@@ -13,13 +13,77 @@ header {
 header div {
     margin-top: auto;
     margin-bottom: auto;
-    padding: 10px;
+    padding: 8px 10px 15px 10px;
 }
 
-/* ForTablet, Laptop, and PC */
-@media only screen and (min-width: 768px) {
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#h1 {
+    width: 50%;
+    text-align: center;
+}
+
+#form {
+    width: 50%;
+    text-align: center;
+    border-left: thick double black;
+}
+
+
+/* Form CSS Code */
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .submit {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the submit button on hover */
+  .submit:hover {
+    background-color: #45a049;
+  }
+
+
+/* Designed for Mobile */
+@media only screen and (max-width: 768px) {
     body {
         background-color: red;
         color: white;
     }
+
+    #h1 {
+        display: none;
+    }
+
+    #form {
+        width: 100%;
+        border: hidden
+    }
+
+    form {
+        width: 94%;
+        margin: 0 auto;
+      }
 }
