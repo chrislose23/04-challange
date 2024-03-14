@@ -1,27 +1,11 @@
-/* ForTablet, Laptop, and PC */
-body {
-    background-color: white;
-    color: black;
+.dark {
+    background-color: black;
+    color: white;
+    height: 100vh;
 }
 
-/* Designed for Mobile */
-@media only screen and (max-width: 768px) {
-    body {
-        background-color: red;
-        color: white;
-    }
-
-    #h1 {
-        display: none;
-    }
-
-    #form {
-        width: 100%;
-        border: hidden
-    }
-
-    form {
-        width: 94%;
-        margin: 0 auto;
-      }
+.light {
+    background-color: white;
+    color: black;
+    height: 100vh;
 }

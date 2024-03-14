@@ -1,11 +1,16 @@
 /* ForTablet, Laptop, and PC */
+body {
+    background-color: white;
+    color: black;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     border-bottom: thick double black;
 }
 
-header div {
+header h1, .mode-switch {
     margin-top: auto;
     margin-bottom: auto;
     padding: 8px 10px 15px 10px;
@@ -49,28 +54,72 @@ form {
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+}
   
-  .input {
+.input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-  }
+}
   
-  .submit {
+.submit {
     width: 100%;
     padding: 10px;
-    background-color: blue;
+    background-color: black;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  /* Style the submit button on hover */
-  .submit:hover {
-    background-color: #45a049;
-  }
+}
+ 
+.submit:hover {
+    background-color: blue;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.light {
+    background-color: white;
+    color: black;
+    height: 100vh;
+}
+
+
+  /* Designed for Mobile */
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    #h1 {
+        display: none;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    main #form {
+        border: none;
+    }
+
+    form {
+        width: 100%;
+        margin: 0 auto;
+      }
+}
+
+@media only screen and (min-width: 769px) {
+    header .title h1 {
+        display: none;
+    }
+
+}
