@@ -1,2 +1,56 @@
-/* ForTablet, Laptop, and PC */
-/* Code for blog.html */
+body {
+    background-color: white;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: thick double black;
+}
+
+.title {
+    margin-right: auto;
+}
+
+header h1, .back-button, .mode-switch {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 8px 10px 15px 10px;
+}
+
+/* main {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: thick double black;
+}
+
+  /* Designed for Mobile */
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    #h1 {
+        display: none;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    main #form {
+        border: none;
+    }
+
+    form {
+        width: 100%;
+        margin: 0 auto;
+      }
+}

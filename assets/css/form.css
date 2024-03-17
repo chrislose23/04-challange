@@ -90,18 +90,11 @@ form {
     background-color: blue;
 }
 
-.dark {
-    background-color: black;
-    color: white;
-    height: 100vh;
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: thick double black;
 }
-
-.light {
-    background-color: white;
-    color: black;
-    height: 100vh;
-}
-
 
   /* Designed for Mobile */
 @media only screen and (max-width: 768px) {
