@@ -45,6 +45,7 @@ h1 {
     width: 50%;
     text-align: center;
     border-left: thick double black;
+    height: 100vh;
 }
 
 
@@ -63,6 +64,16 @@ form {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+}
+
+.text-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 150px;
 }
   
 .submit {
