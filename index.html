@@ -19,15 +19,15 @@
         <span class="circle"><h1 class="circle-title">My First Blog</h1></span>
         </div>
         <div id="form">
-            <form>
+            <form id="myBlog">
                 <h2>What's on your mind?</h2>
-                <input type="text" class="input" placeholder="Username">
+                <input type="text" class="input" id="userName" placeholder="Username">
 
-                <input type="text" class="input" placeholder="Blog Title">
+                <input type="text" class="input" id="blogTitle" placeholder="Blog Title">
 
-                <textarea class="text-input" placeholder="Tell the world your thoughts..."></textarea>
+                <textarea class="text-input" id="content" placeholder="Tell the world your thoughts..."></textarea>
 
-                <input type="submit" value="submit" class="submit">
+                <input type="submit" value="submit" class="submit" id="submit">
 
             </form>
         </div>
@@ -39,7 +39,7 @@
         </div>
 
     </footer>
-
+    <script src="./assets/js/form.js"></script>
     <script src="./assets/js/logic.js"></script>
 </body>
 </html>
