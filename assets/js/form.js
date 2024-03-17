@@ -8,6 +8,13 @@ document.getElementById('myBlog').addEventListener('submit', function(event) {
     localStorage.setItem('userName', userName);
     localStorage.setItem('blogTitle', title);
     localStorage.setItem('content', content);
+
+    let blogs = JSON.parse(localStorage.getItem('blogData')) || [];
+
+    blogs.push({username: userName, title: title, content: content});
+
+    localStorage.setItem('blogData', JSON.stringify(blogs));
+
     window.location.href='blog.html';
 
 });

@@ -1,15 +1,14 @@
 $('#back-button').click(function() {
     window.location='index.html';
 });
+let blogContentData = document.getElementById('blogContent');
 
-let userName = localStorage.getItem('userName');
-let title = localStorage.getItem('blogTitle');
-let content = localStorage.getItem('content');
+let allBlogs = JSON.parse(localStorage.getItem('blogData'));
 
-if (userName && title && content) {
-    let blogContentData = document.getElementById('blogContent');
-    blogContentData.innerHTML = "<p>Username: " + userName + "</p><p>Title: " + title + "</p><p>Content: " + content + "</p>";
+if (allBlogs && allBlogs.length > 0) {
+    allBlogs.forEach(function(entry) {
+        blogContentData.innerHTML += "<p>Username: " + entry.userName + "</p><p>Title: " + entry.title + "</p><p>Content: " + entry.content + "</p>";
+    })
 } else {
-    let blogContentData = document.getElementById('blogContent');
     blogContentData.innerHTML = "<p>No Blog Entries Logged</p>";
 }
