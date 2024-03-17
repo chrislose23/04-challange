@@ -23,31 +23,30 @@ main {
 
 #h1 {
     width: 50%;
-    text-align: center;
-}
-
-h1 {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .circle {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     background-image: linear-gradient(yellow, brown);
     border-radius: 50%;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #form {
     width: 50%;
     text-align: center;
     border-left: thick double black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
-
 
 /* Form CSS Code */
 form {
