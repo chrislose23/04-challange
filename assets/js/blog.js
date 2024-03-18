@@ -7,7 +7,7 @@ let allBlogs = JSON.parse(localStorage.getItem('blogData'));
 
 if (allBlogs && allBlogs.length > 0) {
     allBlogs.forEach(function(entry) {
-        blogContentData.innerHTML += "<p>Username: " + entry.userName + "</p><p>Title: " + entry.title + "</p><p>Content: " + entry.content + "</p>";
+        blogContentData.innerHTML += "<div class='blogtext'><p>Username: " + entry.userName + "</p><hr><p>Title: " + entry.title + "</p><p>Content: " + entry.content + "</p></div>";
     })
 } else {
     blogContentData.innerHTML = "<p>No Blog Entries Logged</p>";

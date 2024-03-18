@@ -11,7 +11,7 @@ document.getElementById('myBlog').addEventListener('submit', function(event) {
 
     let blogs = JSON.parse(localStorage.getItem('blogData')) || [];
 
-    blogs.push({username: userName, title: title, content: content});
+    blogs.push({userName: userName, title: title, content: content});
 
     localStorage.setItem('blogData', JSON.stringify(blogs));
 
