@@ -40,12 +40,12 @@ main {
 
 #form {
     width: 50%;
-    text-align: center;
     border-left: thick double;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-weight: bolder;
 }
 
 /* Form CSS Code */
@@ -55,7 +55,11 @@ form {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-  
+
+#statement {
+    text-align: center;
+}
+
 .input {
     width: 100%;
     padding: 10px;
